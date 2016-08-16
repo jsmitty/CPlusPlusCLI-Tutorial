@@ -1,0 +1,13 @@
+*.cache
+*.suo
+*.sdf
+*.opensdf
+*.user
+*.VisualState.xml
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ll]ib/
+[Ii]nclude/
+*.nupkg
