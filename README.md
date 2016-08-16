@@ -9,7 +9,7 @@ experience it allows youe to create cleaner and better solutions in code for bin
 
 # Term Definitions
 
-	[C++/CLI](https://en.wikipedia.org/wiki/C%2B%2B/CLI) - "a language specification created by Microsoft and intended to supersede Managed Extensions for C++"
+	[C++/CLI](https://en.wikipedia.org/wiki/C%2B%2B/CLI/) - "a language specification created by Microsoft and intended to supersede Managed Extensions for C++"
 
 # Design Considerations
 
