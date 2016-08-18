@@ -1,0 +1,34 @@
+# These are text files and should be normalized
+*.cs text
+*.css text
+*.js text
+*.sql text
+*.c text
+*.cc text
+*.cxx text
+*.cpp text
+*.c++ text
+*.hpp text
+*.h text
+*.h++ text
+*.hh text
+*.pxd text
+*.py text
+*.py3 text
+*.pyw text
+*.pyx text
+
+# Custom for Visual Studio
+*.sln text eol=crlf
+*.csproj text eol=crlf
+*.vbproj text eol=crlf
+*.fsproj text eol=crlf
+*.dbproj text eol=crlf
+
+*.vcxproj text eol=crlf
+*.vcxitems text eol=crlf
+*.props text eol=crlf
+*.filters text eol=crlf
+
+*.docx diff=astextplain
+*.DOCX diff=astextplain
