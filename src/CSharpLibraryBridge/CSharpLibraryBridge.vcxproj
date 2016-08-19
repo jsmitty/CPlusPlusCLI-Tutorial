@@ -89,11 +89,6 @@
   <ItemGroup>
     <ClCompile Include="ExampleObj.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="c:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll">
-      <DeploymentContent>true</DeploymentContent>
-    </None>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
