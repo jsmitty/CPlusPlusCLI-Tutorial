@@ -48,6 +48,7 @@ namespace CSharpLibrary
 
         public event EventHandler EvenNumberAchieved;
         public event EventHandler OddNumberAchieved;
+        public int CurrentInt { get { return _trackedInt; } }
 
         /// <summary>
         /// fires a simple event in order to test them in unmanaged code
@@ -57,12 +58,12 @@ namespace CSharpLibrary
             if (_trackedInt % 2 == 0)
             {
                 if (EvenNumberAchieved != null)
-                    EvenNumberAchieved(this, EventArgs.Empty);
+                    EvenNumberAchieved(this, new CustomArgs("Even Number!"));
             }
             else
             {
                 if (OddNumberAchieved != null)
-                    OddNumberAchieved(this, EventArgs.Empty);
+                    OddNumberAchieved(this, new CustomArgs("Odd Number!"));
             }
         }
     }
