@@ -6,8 +6,8 @@ using namespace System;
 using namespace System::Runtime::InteropServices;
 
 gcroot<ExampleObject^> exampleObject = gcnew ExampleObject();
-int(*evenNumberOccurred)(ExampleStruct);
-int(*oddNumberOccurred)(ExampleStruct);
+void(*evenNumberOccurred)(ExampleStruct);
+void(*oddNumberOccurred)(ExampleStruct);
 
 char* convertString(String^ str)
 {
@@ -51,13 +51,13 @@ EXAMPLE_OBJECT_DEC void example_subtract(int num)
 	exampleObject->Subtract(num);
 }
 
-EXAMPLE_OBJECT_DEC void example_subscribe_even(int(*funcPtr)(ExampleStruct))
+EXAMPLE_OBJECT_DEC void example_subscribe_even(void(*funcPtr)(ExampleStruct))
 {
 	evenNumberOccurred = funcPtr;
 	exampleObject->EvenNumberAchieved += gcnew EventHandler(&evenNumberUpdate);
 }
 
-EXAMPLE_OBJECT_DEC void example_subscribe_odd(int(*funcPtr)(ExampleStruct))
+EXAMPLE_OBJECT_DEC void example_subscribe_odd(void(*funcPtr)(ExampleStruct))
 {
 	oddNumberOccurred = funcPtr;
 	exampleObject->OddNumberAchieved += gcnew EventHandler(&oddNumberUpdate);
