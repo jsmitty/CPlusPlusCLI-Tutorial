@@ -56,7 +56,9 @@ namespace CSharpLibrary
         private void checkAndFireEvent()
         {
             if (_trackedInt % 2 == 0)
+            {
                 EvenNumberAchieved?.Invoke(this, new CustomArgs("Even Number!"));
+            }
             else
                 OddNumberAchieved?.Invoke(this, new CustomArgs("Odd Number!"));
         }
