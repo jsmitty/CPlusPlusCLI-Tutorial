@@ -57,14 +57,10 @@ namespace CSharpLibrary
         {
             if (_trackedInt % 2 == 0)
             {
-                if (EvenNumberAchieved != null)
-                    EvenNumberAchieved(this, new CustomArgs("Even Number!"));
+                EvenNumberAchieved?.Invoke(this, new CustomArgs("Even Number!"));
             }
             else
-            {
-                if (OddNumberAchieved != null)
-                    OddNumberAchieved(this, new CustomArgs("Odd Number!"));
-            }
+                OddNumberAchieved?.Invoke(this, new CustomArgs("Odd Number!"));
         }
     }
 }
